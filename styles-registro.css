@@ -1,0 +1,23 @@
+body{
+    background: url(images/registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center top;
+}
+
+main{
+    margin: auto;
+    margin-top: 11%;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 45px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}

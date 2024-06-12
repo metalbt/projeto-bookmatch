@@ -1,0 +1,24 @@
+body{
+    background: url(images/LOGIN.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center center;
+}
+
+main{
+    margin: auto;
+    margin-top: 12%;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 45px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
