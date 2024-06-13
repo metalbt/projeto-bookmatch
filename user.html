@@ -9,29 +9,75 @@
     <link rel="shortcut icon" href="images/logo_bookmatc_ico2.0.ico" type="image/x-icon">
     <title>Página de Usuário</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="home.html"><img id="logo" src="images/logo_bookmatch2.0.png" alt="logo-bookmatch"></a>
-            <a id="pos-n" href="home.html">
-                <p id="nlogo">BookMatch</p>
+<header>
+    <nav id="nav">
+        <a class="navbar-brand" href="home.html" id="ft">
+          <img src="images/logo_bookmatch2.0.png" width="50" height="50" class="d-inline-block align-center" alt="">
+          BookMatch
+        </a>
+        <div id="menu">
+            <a href="home.html">
+                <p>Home</p>
             </a>
-            <div id="menu">
-                <a href="home.html">
-                    <p class="inl">Home</p>
-                </a><a href="#">
-                    <p class="inl">Catálogo</p>
-                </a><a href="#">
-                    <p class="inl">Surpreenda-me</p>
-                </a>
-            </div>
-            <div>
-                <form class="d-flex" role="search" style="width: 250px; border-radius: 5px; margin-left: 20px;">
-                    <input class="form-control me-2" type="search" placeholder="Nome do Livro" aria-label="Search">
-                    <button class="btn btn-outline-danger" type="submit">Pesquisar</button>
-                  </form>
-            </div>       
-        </nav>
-    </header>
+            <a href="#">
+                <p>Catálogo</p>
+            </a>
+            <a href="#">
+                <p>Surpreenda-me</p>
+            </a>
+            <a href="user.html">
+                <p>Página de Usuário</p>
+            </a>
+        </div>
+        <div>
+            <form class="d-flex" role="search" style="width: 350px; display: inline;" id="pesq">
+                <input class="form-control me-2" type="search" placeholder="Ex: Dom Quixote" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Pesquisar</button>
+              </form>
+        </div>
+      </nav>
+        </header>
+<body>
+    <main id="areaft">
+        <div>
+            <img  id="ftp" src="images/gojo2.jpg" alt="Foto de Perfil">
+        </div>
+        <section>
+            <h1 id="nome">Nome: Joao</h1>
+        </section>
+        <section>
+            <article>
+                <h1 class="cat">Livros Favoritos:</h1>
+                <ul>
+                    <li class="lifav">
+                        O Senhor dos Anéis: A Sociedade do Anel
+                    </li>
+                    <li class="lifav">
+                        Dom Quixote
+                    </li>
+                    <li class="lifav">
+                        Strange Case of Dr Jekyll and Mr Hyde - O Médico e o Monstro
+                    </li>
+                    <li class="lifav">
+                        Memórias Póstumas de Brás Cubas
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h1 class="cat">Generos Favoritos:</h1>
+                <ul>
+                    <li class="lifav">
+                        Romance
+                    </li>
+                    <li class="lifav">
+                        Conto
+                    </li>
+                    <li class="lifav">
+                        Cronica
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

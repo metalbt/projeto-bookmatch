@@ -10,6 +10,12 @@ a{
     color: var(--cor-clara);
 }
 
+body{
+    background-color: var(--vermelho-escuro);
+    font-family: 'Lilita One';
+    color: var(--cor-escura);
+}
+
 :root{
     --cor-escura: #0D0005;
     --cor-clara: #F2EBDC;
@@ -18,7 +24,7 @@ a{
     --vermelho-escuro: #26010B;
 }
 
-nav{
+#nav{
     background-color: var(--cor-escura);
     padding: 20px;
     color: var(--cor-clara);
@@ -26,47 +32,63 @@ nav{
     font-size: 16px;
 }
 
-#logo{
-    width: 55px;
-    margin-left: 20px;
+#pesq{
+    margin-left: auto;
+    max-width: 50%;
 }
 
-nav{
-    position: relative;
-}
-
-#nlogo{
+div#menu>a>p{
     display: inline;
-}
-
-#pos-n{
-    top: 33%;
-    right: 1332px;
-    text-decoration: none;
-    color: var(--cor-clara);
-    font-family: 'Lilita One';
-    font-weight: 400;
-    font-size: 1.3em;
+    margin: 25px;
 }
 
 #menu{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 600px;
-    
+    margin: auto;
+    max-width: 600px;
 }
 
-div#menu>a:hover{
-    transition-delay: 0.4;
+div#menu>a>p:hover{
+    color: var(--vermelho-claro);
+
+}
+
+#ft:hover{
     color: var(--vermelho-claro);
 }
 
-div>p{
-    display: inline;
+#ftp{
+    max-width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
 }
 
-.inl{
-    display: inline;
-    margin-left: 30px;
-    font-size: 1.1em;
+#areaft{
+    background-color: var(--cor-clara);
+    max-width: 90vw;
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+}
+
+#nome{
+   
+    color: var(--cor-escura);
+    width: 200px;
+    
+}
+
+#nome:hover{
+    cursor: pointer;
+    color: var(--vermelho-claro);
+}
+
+.cat{
+    margin-top: 10px;
+    text-indent: 10px;
+}
+
+.lifav{
+    font-size: 1.2em;
+    text-indent: 20px;
 }
