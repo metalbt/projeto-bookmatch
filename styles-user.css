@@ -63,7 +63,7 @@ div#menu>a>p:hover{
     display: block;
 }
 
-#areaft{
+.areaft{
     background-color: var(--cor-clara);
     max-width: 90vw;
     border-radius: 10px;
@@ -91,4 +91,37 @@ div#menu>a>p:hover{
 .lifav{
     font-size: 1.2em;
     text-indent: 20px;
+    color: var();
+}
+
+article#bd{
+   border-bottom: 1px solid var(--cor-escura);
+    
+}
+
+#logopara{
+    background-color: gray;
+    max-width: 100%;
+    margin-top: 35px;
+    background-image: url(images/livros2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    background-position: center center;
+    padding: 50px;
+    
+}
+
+h1#rec{
+    margin: auto;
+    max-width: 400px;
+    color: var(--cor-clara);
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.451);
+}
+
+#dec{
+    text-align: justify;
 }
