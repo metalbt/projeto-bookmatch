@@ -88,13 +88,12 @@
       </div>
       <div id="book-list"></div>
       <script>
-        // Fetch the book data from the JSON file
         fetch('livros.json')
           .then(response => response.json())
           .then(data => {
             const bookList = document.getElementById('book-list');
             
-            // Slice the first 2 books from the array
+            
             const firstTwoBooks = data.books.slice(0, 2);
             
             firstTwoBooks.forEach(book => {
