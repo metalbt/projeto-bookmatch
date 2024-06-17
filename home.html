@@ -32,6 +32,19 @@
               color: #590212;
           }
     </style>
+        <script>
+          let lastPage = null;
+  
+          function openRandomPage() {
+              const pages = ['domquixote.html', 'memoriaspostumas.html', 'lotr.html', 'omedicoemonstro.html'];
+              let randomPage;
+              do {
+                  randomPage = pages[Math.floor(Math.random() * pages.length)];
+              } while (randomPage === lastPage);
+              window.location.href = randomPage;
+              lastPage = randomPage;
+          }
+      </script>
 </head>
 <header>
     <nav id="nav">
@@ -46,7 +59,7 @@
             <a href="catalogo.html">
                 <p>Catálogo</p>
             </a>
-            <a href="#">
+            <a href="#" onclick="openRandomPage(); return false;">
                 <p>Surpreenda-me</p>
             </a>
             <a href="user.html">
@@ -91,8 +104,8 @@
                 <img src="${book.image_url}" alt="${book.title}">
                 <div>
                   <h2><a href="${book.url}">${book.title}</a></h2>
-                  <p><strong>Author:</strong> ${book.author}</p>
-                  <p><strong>Publication Date:</strong> ${book.publication_date}</p>
+                  <p><strong>Autor:</strong> ${book.author}</p>
+                  <p><strong>Data de Publicação:</strong> ${book.publication_date}</p>
                 </div>
               `;
               bookList.appendChild(bookItem);

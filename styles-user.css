@@ -88,10 +88,21 @@ div#menu>a>p:hover{
     text-indent: 10px;
 }
 
+.lifav:hover{
+    color: var(--vermelho-claro);
+
+}
+
+.lifav2{
+    font-size: 1.2em;
+    text-indent: 20px;
+    color: var(--cor-escura);
+}
+
 .lifav{
     font-size: 1.2em;
     text-indent: 20px;
-    color: var();
+    color: var(--cor-escura);
 }
 
 article#bd{
@@ -124,4 +135,43 @@ h1#rec{
 
 #dec{
     text-align: justify;
+}
+
+.capalv{
+    max-width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+.arcapa{
+    max-width: 220px;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid var(--cor-escura);
+    border-radius: 5px;
+}
+
+.basinf{
+    max-width: 700px;
+    margin: auto;
+}
+
+.ress{
+    margin: auto;
+    text-align: justify;
+    max-width: 700px;
+}
+
+section.infose{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infose{
+    margin: auto;
+    border: 1px solid var(--cor-escura);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 710px;
 }

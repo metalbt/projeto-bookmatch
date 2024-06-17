@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="styles-user.css">
     <link rel="shortcut icon" href="images/logo_bookmatc_ico2.0.ico" type="image/x-icon">
     <title>Página de Usuário</title>
+    <script>
+        let lastPage = null;
+
+        function openRandomPage() {
+            const pages = ['domquixote.html', 'memoriaspostumas.html', 'lotr.html', 'omedicoemonstro.html'];
+            let randomPage;
+            do {
+                randomPage = pages[Math.floor(Math.random() * pages.length)];
+            } while (randomPage === lastPage);
+            window.location.href = randomPage;
+            lastPage = randomPage;
+        }
+    </script>
 </head>
 <header>
     <nav id="nav">
@@ -22,7 +35,7 @@
             <a href="catalogo.html">
                 <p>Catálogo</p>
             </a>
-            <a href="#">
+            <a href="#" onclick="openRandomPage(); return false;">
                 <p>Surpreenda-me</p>
             </a>
             <a href="user.html">
@@ -49,30 +62,38 @@
             <article id="bd">
                 <h1 class="cat">Livros Favoritos:</h1>
                 <ul>
-                    <li class="lifav">
-                        O Senhor dos Anéis: A Sociedade do Anel
-                    </li>
-                    <li class="lifav">
-                        Dom Quixote
-                    </li>
-                    <li class="lifav">
-                        Strange Case of Dr Jekyll and Mr Hyde - O Médico e o Monstro
-                    </li>
-                    <li class="lifav">
-                        Memórias Póstumas de Brás Cubas
-                    </li>
+                    <a href="lotr.html">
+                        <li class="lifav">
+                            O Senhor dos Anéis: A Sociedade do Anel
+                        </li>
+                    </a>
+                    <a href="domquixote.html">
+                        <li class="lifav">
+                            Dom Quixote
+                        </li>
+                    </a>
+                    <a href="omedicoemonstro.html">
+                        <li class="lifav">
+                            Strange Case of Dr Jekyll and Mr Hyde - O Médico e o Monstro
+                        </li>
+                    </a>
+                    <a href="memoriaspostumas.html">
+                        <li class="lifav">
+                            Memórias Póstumas de Brás Cubas
+                        </li>
+                    </a>
                 </ul>
             </article>
             <article>
                 <h1 class="cat">Generos Favoritos:</h1>
                 <ul>
-                    <li class="lifav">
+                    <li class="lifav2">
                         Romance
                     </li>
-                    <li class="lifav">
+                    <li class="lifav2">
                         Conto
                     </li>
-                    <li class="lifav">
+                    <li class="lifav2">
                         Cronica
                     </li>
                 </ul>
